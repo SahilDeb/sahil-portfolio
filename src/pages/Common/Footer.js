@@ -8,5 +8,7 @@ export default function Footer() {
       <div style={{ border: "1px solid black" }}></div>
       <Social />
     </div>
+
+    // Posting a commit
   )
 }
