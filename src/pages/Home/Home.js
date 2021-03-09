@@ -1,15 +1,28 @@
 import React from 'react'
-import Navbar from './Navbar';
+import Navbar from '../Common/Navbar';
 import Hero from './Hero';
-import Footer from '../common/Footer';
+import Footer from '../Common/Footer';
+import About from '../About/About';
 
 function Home(props) {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <h1>Home</h1>
-      <Footer />
+      <section id="home">
+        <Hero/>
+        <Navbar/>
+      </section>
+      <section id="about">
+        <About/>
+      </section>
+      <section id="journey">
+
+      </section>
+      <section id="projects">
+
+      </section>
+      <section id="contact">
+        <Footer />
+      </section>
     </div>
   )
 }
