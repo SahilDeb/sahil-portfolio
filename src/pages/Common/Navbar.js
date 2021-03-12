@@ -1,18 +1,23 @@
 import React from 'react'
 
 export default function Navbar() {
+  const cssClasses = {
+    container: `flex flex-col justify-between bg-primary`,
+    menu: `flex flex-row justify-evenly text-secondary font-sans`,
+    navItem: `mx-10 my-2 hover:text-accent font-gothic font-semibold text-lg`,
+    border: `border border-solid border-accent h-1 bg-accent`
+  }
+
   return (
-    <div className={`flex flex-row justify-between bg-primary`}>
-      <div id="menu" className={`flex flex-row justify-evenly text-secondary font-sans`}>
-        <div className={`mx-10 my-2 hover:text-accent`}>
-          <span>Home</span>
-        </div>
-        <span className={`mx-10 my-2 hover:text-accent`}>About</span>
-        <span className={`mx-12 my-2 hover:text-accent`}>My Journey</span>
-        <span className={`mx-12 my-2 hover:text-accent`}>Projects</span>
-        <span className={`mx-12 my-2 hover:text-accent`}>Contact</span>
+    <div className={cssClasses.container}>
+      <div id="menu" className={cssClasses.menu}>
+        <span className={cssClasses.navItem}>Home</span>
+        <span className={cssClasses.navItem}>About</span>
+        <span className={cssClasses.navItem}>My Journey</span>
+        <span className={cssClasses.navItem}>Projects</span>
+        <span className={cssClasses.navItem}>Contact</span>
       </div>
-      <hr></hr>
+      <div className={cssClasses.border}></div>
     </div>
   )
 }

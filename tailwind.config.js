@@ -11,12 +11,16 @@ module.exports = {
     },
     colors: {
       'primary': '#001133',
-      'secondary': '#F5F5F5',
+      'secondary': '#FFFFFF',
       'accent': '#E54F6D',
+      'contrast': '#EBEBEB',
+      'link': '#53A5FC'
     },
     fontFamily: {
       sans: ['Raleway', 'Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      gothic: ['Century Gothic', 'CenturyGothic', 'AppleGothic', 'sans-serif'],
+      copperplate: ['Copperplate,Copperplate Gothic Light,fantasy']
     },
   },
   variants: {
