@@ -8,13 +8,13 @@ export default function Hero() {
     animation: `rotate-90 translate-x-1`
   }
 
-  const getMyName = async () => {
-    const res = await fetch('https://sahil-ecommerce-backend.herokuapp.com/myname')
-    const fetchedName = await res.json()
+  // const getMyName = async () => {
+  //   const res = await fetch('https://sahil-ecommerce-backend.herokuapp.com/myname')
+  //   const fetchedName = await res.json()
 
-    console.log(fetchedName);
-    setMyName(fetchedName.name);
-  }
+  //   console.log(fetchedName);
+  //   setMyName(fetchedName.name);
+  // }
 
   useEffect(() => {
     var arrow = document.getElementById("arrow");
@@ -30,7 +30,9 @@ export default function Hero() {
       })
     }
 
-    getMyName();
+    fetch('https://sahil-ecommerce-backend.herokuapp.com/myname')
+    .then(res => res.json())
+    .then(fetchedName => setMyName(fetchedName.name));
   }, [isHover]);
 
   return (
