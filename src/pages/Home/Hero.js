@@ -2,19 +2,11 @@ import React, {useState, useEffect} from 'react'
 import arrow_right from '../../img/right-arrow.svg'
 export default function Hero() {
   const [isHover, setIsHover] = useState(false);
-  const [myName, setMyName] = useState("Hungry Coder");
+  const [myName, setMyName] = useState("Sahil");
   
   const cssClasses = {
     animation: `rotate-90 translate-x-1`
   }
-
-  // const getMyName = async () => {
-  //   const res = await fetch('https://sahil-ecommerce-backend.herokuapp.com/myname')
-  //   const fetchedName = await res.json()
-
-  //   console.log(fetchedName);
-  //   setMyName(fetchedName.name);
-  // }
 
   useEffect(() => {
     var arrow = document.getElementById("arrow");
