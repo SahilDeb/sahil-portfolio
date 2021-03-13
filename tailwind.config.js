@@ -14,7 +14,8 @@ module.exports = {
       'secondary': '#FFFFFF',
       'accent': '#E54F6D',
       'contrast': '#EBEBEB',
-      'link': '#53A5FC'
+      'link': '#53A5FC',
+      'main': '#616161'
     },
     fontFamily: {
       sans: ['Raleway', 'Graphik', 'sans-serif'],

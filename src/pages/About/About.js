@@ -1,4 +1,5 @@
 import React from 'react'
+import ProgressBar from './Common/ProgressBar'
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
         <div className={`border-primary bg-primary m-auto mt-1 h-1 w-14`}></div>
       </div>
       <div className={`flex flex-col md:flex-row`}>
-        <div className={`h-auto w-screen p-5 text-center border border-primary`}>
+        <div className={`h-auto w-screen p-5 text-center border border-primary text-main`}>
           <div>IMAGE</div>
           <div>Who's this guy?</div>
           <div>
@@ -19,8 +20,16 @@ export default function About() {
             <span className={`text-link`}>Click here to know more.</span>
           </div>
         </div>
-        <div className={`h-auto w-screen py-5 text-center border border-primary`}>
-          SKILLS
+        <div className={`h-auto w-screen py-5 text-center text-main`}>
+          <ProgressBar name={`HTML`} width={`90`}/>
+          <ProgressBar name={`CSS`} width={`90`}/>
+          <ProgressBar name={`Javascript`} width={`85`}/>
+          <ProgressBar name={`React`} width={`80`}/>
+          <ProgressBar name={`.NET`} width={`75`}/>
+          <ProgressBar name={`MS-SQL`} width={`70`}/>
+          <ProgressBar name={`MongoDB`} width={`50`}/>
+          <ProgressBar name={`Node`} width={`40`}/>
+          <ProgressBar name={`Python`} width={`45`}/>
         </div>
       </div>
     </div>

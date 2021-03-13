@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import arrow_right from '../../img/right-arrow.svg'
 export default function Hero() {
   const [isHover, setIsHover] = useState(false);
-  const [myName, setMyName] = useState("Sahil");
+  const [myName, setMyName] = useState("Sahil Debnath");
   
   const cssClasses = {
     animation: `rotate-90 translate-x-1`
